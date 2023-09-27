@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-/* Stylesheet 1: */
+<style>/* Stylesheet 1: */
 body {
     font: 100% Lucida Sans, Verdana;
     margin: 20px;
     line-height: 26px;
+    /* 변경: 배경색과 글자 색상 변경 */
+    background-color: #f1f1f1;
+    color: #333333;
 }
 
 .container {
-    xmin-width: 900px;
+    /* 변경: 최소 너비를 줄임 */
+    min-width: 700px;
 }
 
 .wrapper {
@@ -91,6 +94,7 @@ a:hover {
     text-decoration: none;
 }
 
+
 @media (max-width: 800px) {
     #sidebar {
         width: auto;
@@ -99,6 +103,7 @@ a:hover {
     #main {
         margin-right: 0;
     }    
+       
 }
 
 @media (max-width: 600px) {
@@ -112,16 +117,17 @@ a:hover {
 }
 </style>
 
-<style>
-/* Stylesheet 2: */
+<style>/* Stylesheet 2: */
 body {
     font-family: Arial;
-    background-color: #d14836;
+    /* 변경: 배경색 변경 */
+    background-color: #ffffff;
     line-height: 20px;
 }
 
 .container {
-    xmin-width: 900px;
+    /* 변경: 최소 너비를 줄임 */
+    min-width: 600px;
 }
 
 .wrapper {
@@ -130,7 +136,7 @@ body {
 }
 
 #top {
-    color: #ffffff;
+    color: #333333;
     padding: 15px;
     font-size: 30px;
     line-height: 26px;    
@@ -148,17 +154,19 @@ body {
 
 #main {
     padding: 10px;
-    background-color: #ffffff;
+    /* 변경: 배경색 변경 */
+    background-color: #f1f1f1;
     font: 80% Verdana;
 }
 
 #main h1, #main h2 {
-    color: #d14836;
+    color: #333333;
 }
 
 #sidebar {
-    background-color: #F6DAD7;
-    color: #d14836;
+    /* 변경: 배경색 변경 */
+    background-color: #d14836;
+    color: #ffffff;
     padding: 10px;
 }
 
@@ -166,7 +174,8 @@ body {
     text-align: center;
     padding: 10px;
     font-size: 70%;
-    color: #ffffff;
+    /* 변경: 글자 색상 변경 */
+    color: #333333;
 }
 
 #menulist {
@@ -176,9 +185,11 @@ body {
 
 .menuitem {
     width: 155px;
+    /* 변경: 배경색 변경 */
     background-color: #d14836;
     border: 1px solid #d14836;
     border-radius: 40px;
+    /* 변경: 글자 색상 변경 */
     color: #ffffff;
     list-style-type: none;
     margin: 10px;
@@ -188,17 +199,21 @@ body {
 }
 
 .menuitem:nth-child(2) {
-   background-color:white;
-   color: #d14836;
+   /* 변경: 배경색 변경 */
+   background-color:#04AA6D;
+   color: #ffffff;
    font-weight:bold;
 }
 
 .menuitem:hover {
-    background-color: #ffffff;
-    color: #d14836;
+    /* 변경: 배경색 변경 */
+    background-color: #333333;
+    /* 변경: 글자 색상 변경 */
+    color: #ffffff;
 }
 
 a {
+    /* 변경: 글자 색상 변경 */
     color: #d14836;
     text-decoration: none;
 }
@@ -208,16 +223,18 @@ a:hover {
 }
 </style>
 
-<style>
-/* Stylesheet 3: */
+<style>/* Stylesheet 3: */
 body {
     font: 100% Verdana;
     margin: 20px;
     line-height: 26px;
+    /* 변경: 배경색 변경 */
+    background-color: #ffffff;
 }
 
 .container {
-    xmin-width: 900px;
+    /* 변경: 최소 너비를 줄임 */
+    min-width: 600px;
 }
 
 .wrapper {
@@ -226,7 +243,8 @@ body {
 }
 
 #sidebar {
-    background-color: #f1f1f1;
+    /* 변경: 배경색 변경 */
+    background-color: #4CAF50;
     border: 1px solid #d4d4d4;
     padding-left: 10px;
 }
@@ -235,11 +253,13 @@ body {
     text-align: center;
     padding: 10px;
     font-size: 70%;
-    line-height: 14px;
+    /* 변경: 글자 색상 변경 */
+    color: #ffffff;
 }
 
 h1, h2, h3 {
-    color: #4CAF50;
+    /* 변경: 글자 색상 변경 */
+    color: #333333;
 }
 
 #menulist {
@@ -251,7 +271,9 @@ h1, h2, h3 {
 .menuitem {
     width: 165px;
     float: left;
+    /* 변경: 배경색 변경 */
     background-color: #555555;
+    /* 변경: 글자 색상 변경 */
     color: #ffffff;
     list-style-type: none;
     margin: 4px;
@@ -261,33 +283,37 @@ h1, h2, h3 {
 }
 
 .menuitem:nth-child(3) {
+   /* 변경: 배경색 변경 */
    background-color:#04AA6D;
 }
 
 .menuitem:hover {
+    /* 변경: 배경색 변경 */
     background-color: #000;
 }
 
 a {
+    /* 변경: 글자 색상 변경 */
     color: #000000;
 }
 
 a:hover {
+    /* 변경: 글자 색상 변경 */
     color: #84c754;
 }
 </style>
-
-<style>
-/* Stylesheet 4: */
+<style>/* Stylesheet 4: */
 body {
     font: 100% Courier New;
     margin: 20px;
     line-height: 26px;
-    background-color: #000000;
+    /* 변경: 배경색 변경 */
+    background-color: #f1f1f1;
 }
 
 .container {
-    xmin-width: 900px;
+    /* 변경: 최소 너비를 줄임 */
+    min-width: 600px;
 }
 
 .wrapper {
@@ -296,18 +322,23 @@ body {
 }
 
 #top {
-    color: #84c754;
+    /* 변경: 글자 색상 변경 */
+    color: #d14836;
     padding: 15px;
 }
 
 #main {
     padding: 10px;
-    color: #84c754;
+    /* 변경: 배경색 변경 */
+    background-color: #ffffff;
+    /* 변경: 글자 색상 변경 */
+    color: #333333;
 }
 
 #sidebar {
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    /* 변경: 글자 색상 변경 */
+    color: #d14836;
+    border: 1px solid #d14836;
     border-radius: 4px;
     padding: 10px;
     width: 320px;
@@ -319,9 +350,10 @@ body {
 }
 
 #bottom {
-    border: 1px solid #ffffff;
+    border: 1px solid #d14836;
     border-radius: 4px;
-    color: #ffffff;
+    /* 변경: 글자 색상 변경 */
+    color: #333333;
     text-align: center;
     padding: 10px;
     font-size: 70%;
@@ -333,25 +365,33 @@ body {
 }
 
 .menuitem {
-    color: #84c754;
+    /* 변경: 글자 색상 변경 */
+    color: #d14836;
     cursor: pointer;
 }
 
 .menuitem:nth-child(4) {
+    /* 변경: 배경색 변경 */
+    background-color:#04AA6D;
+    /* 변경: 글자 색상 변경 */
     color:white;
     font-weight:bold;
 }
 
 .menuitem:hover {
+    /* 변경: 배경색 변경 */
+    background-color: #333333;
+    /* 변경: 글자 색상 변경 */
     color: #ffffff;
 }
 
 a {
+    /* 변경: 글자 색상 변경 */
     color: #ffffff;
 }
 
 a:hover {
-    color: #84c754;
+    text-decoration: underline;
 }
 @media (max-width: 600px) {
     #sidebar {
@@ -361,6 +401,7 @@ a:hover {
     }    
 }
 </style>
+
 </head>
 <body>
 
@@ -372,12 +413,11 @@ a:hover {
   <div class="wrapper">
    <div id="menubar">
      <ul id="menulist">
-       <li class="menuitem" onclick="reStyle(0)">Stylesheet 1</li>
-       <li class="menuitem" onclick="reStyle(1)">Stylesheet 2</li>
-       <li class="menuitem" onclick="reStyle(2)">Stylesheet 3</li>
-       <li class="menuitem" onclick="reStyle(3)">Stylesheet 4</li>
-       <li class="menuitem" onclick="noStyles()">No Stylesheet</li>
-       <li class="menuitem" onclick="randomizeStyles()">Randomize Styles</li>
+       <li class="menuitem" onclick="reStyle(0)">Stylesheet 1
+       <li class="menuitem" onclick="reStyle(1)">Stylesheet 2
+       <li class="menuitem" onclick="reStyle(2)">Stylesheet 3
+       <li class="menuitem" onclick="reStyle(3)">Stylesheet 4
+       <li class="menuitem" onclick="noStyles()">No Stylesheet
      </ul>
     </div>
     <div id="main">
@@ -403,42 +443,5 @@ a:hover {
   </div>
 </div>
 
-<script>
-// JavaScript 함수: 스타일 변경 함수입니다.
-function reStyle(n) {
-    noStyles();
-    document.styleSheets[n].disabled = false;
-}
-
-// JavaScript 함수: 스타일 삭제 함수입니다.
-function noStyles() {
-    for (var i = 0; i < document.styleSheets.length; i++) {
-        document.styleSheets[i].disabled = true;
-    }
-}
-
-// JavaScript 함수: 텍스트 크기와 배경색을 랜덤으로 변경하는 함수입니다.
-function randomizeStyles() {
-  // 텍스트 크기를 랜덤하게 설정 (10px에서 30px 사이)
-  var fontSize = Math.floor(Math.random() * 21) + 10;
-  
-  // 랜덤한 색상을 생성
-  var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-
-  // 스타일 변경
-  var customStyles = document.getElementById('custom-styles');
-  customStyles.innerHTML = `
-    body {
-      font-size: ${fontSize}px;
-      background-color: ${randomColor};
-    }
-  `;
-}
-
-// 문서 로드 시 초기 스타일 설정
-document.addEventListener("DOMContentLoaded", function () {
-  randomizeStyles();
-});
-</script>
 </body>
 </html>
