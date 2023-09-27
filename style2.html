@@ -265,7 +265,7 @@ h1, h2, h3 {
 }
 
 .menuitem:hover {
-    background-color: #b19e9e;
+    background-color: #000;
 }
 
 a {
@@ -343,4 +343,102 @@ body {
 }
 
 .menuitem:hover {
-    color
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #84c754;
+}
+@media (max-width: 600px) {
+    #sidebar {
+       width: auto;
+       margin-bottom:10px;        
+       position: relative;
+    }    
+}
+</style>
+</head>
+<body>
+
+<div class="container wrapper">
+  <div id="top">
+    <h1>Welcome to Sunghyuk Choi's Homepage (22200743) </h1>
+    <p>Use the menu to select different Stylesheets</p>
+  </div>
+  <div class="wrapper">
+   <div id="menubar">
+     <ul id="menulist">
+       <li class="menuitem" onclick="reStyle(0)">Stylesheet 1</li>
+       <li class="menuitem" onclick="reStyle(1)">Stylesheet 2</li>
+       <li class="menuitem" onclick="reStyle(2)">Stylesheet 3</li>
+       <li class="menuitem" onclick="reStyle(3)">Stylesheet 4</li>
+       <li class="menuitem" onclick="noStyles()">No Stylesheet</li>
+       <li class="menuitem" onclick="randomizeStyles()">Randomize Styles</li>
+     </ul>
+    </div>
+    <div id="main">
+      <h1>Same Page Different Stylesheets</h1>
+      <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+      <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>,
+      <a href="#" onclick="reStyle(1);return false">Stylesheet2</a>,
+      <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
+      <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>.
+      </p>
+       <h2>No Styles</h2>
+      <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br><a href="#" onclick="noStyles();return false">No Stylesheet</a>.</p>
+   </div>
+    <div id="sidebar">
+      <h3>Side-Bar</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+  </div>  
+  
+  
+  <div id="bottom">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+  </div>
+</div>
+
+<script>
+// JavaScript 함수: 스타일 변경 함수입니다.
+function reStyle(n) {
+    noStyles();
+    document.styleSheets[n].disabled = false;
+}
+
+// JavaScript 함수: 스타일 삭제 함수입니다.
+function noStyles() {
+    for (var i = 0; i < document.styleSheets.length; i++) {
+        document.styleSheets[i].disabled = true;
+    }
+}
+
+// JavaScript 함수: 텍스트 크기와 배경색을 랜덤으로 변경하는 함수입니다.
+function randomizeStyles() {
+  // 텍스트 크기를 랜덤하게 설정 (10px에서 30px 사이)
+  var fontSize = Math.floor(Math.random() * 21) + 10;
+  
+  // 랜덤한 색상을 생성
+  var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+  // 스타일 변경
+  var customStyles = document.getElementById('custom-styles');
+  customStyles.innerHTML = `
+    body {
+      font-size: ${fontSize}px;
+      background-color: ${randomColor};
+    }
+  `;
+}
+
+// 문서 로드 시 초기 스타일 설정
+document.addEventListener("DOMContentLoaded", function () {
+  randomizeStyles();
+});
+</script>
+</body>
+</html>
